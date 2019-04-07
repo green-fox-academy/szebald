@@ -1,0 +1,108 @@
+ @import url("https://use.typekit.net/upw0bqh.css");
+
+body {
+    background-image: url("assets/background.png");
+    margin: 0;
+}
+
+h1,
+h2,
+h3
+a,
+p {
+    font-family: courier-std, monospace;
+font-weight: 700;
+font-style: normal;
+}
+
+.logo {
+    margin-left: 115px;
+}
+nav {
+    background: #333333;
+    border-bottom: 8px solid #333333;
+    padding-bottom: 8px solid #333333;
+    margin: auto #333333;
+}
+
+h1 {
+    margin-bottom: 40px;
+    margin-left: 10%;
+    margin-top: 100px;
+    font-size: 56px;
+}
+
+h2 {
+    margin-left: 10%;
+    margin-bottom: 35px;
+    color: #ff0099;
+    font-size: 30px;
+}
+
+h3 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+a {
+    color: #ff0099;
+    margin-left: 40px;
+    margin-right: 1px;
+    padding: 5px 20%;
+}
+
+a:hover {
+    color: white;
+}
+
+.box {
+    float: left;
+    display: inline-block;
+    text-align: right;
+    text-transform: uppercase;
+    text-decoration: underline;
+    padding: 10px 20px;
+    margin-bottom: 15px;
+}
+
+p {
+    letter-spacing: 2px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.dash {
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+}
+
+.first {
+    margin-left: 550px
+}
+
+li {
+    float: left;
+    
+}
+
+li a {
+    display: block;
+    color: #ff0099;
+    text-align: center;
+    padding: 14px;
+    text-decoration: underline;
+    text-transform: uppercase;
+    
+}
+
+.last {
+    margin-right: 120px;
+}
