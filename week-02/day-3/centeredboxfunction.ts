@@ -14,15 +14,14 @@ const ctx = canvas.getContext('2d');
 let colors: string [] =["red", "yellow", "green"]
 
 function sqdraw (size) {
-    let clr = 0
+    
     let x = 300 - size / 2
     let y = 200 - size / 2
 
     for (let i = 0; i < 3; i++){
-        ctx.fillStyle = colors[clr]
+        ctx.fillStyle = colors[i]
         ctx.fillRect(x,y, size, size)
-        clr = clr + 1;
-        size = size / 2
+        size = size - 50
         x = 300 - size / 2
         y = 200 - size / 2
 }
