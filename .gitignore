@@ -2,3 +2,5 @@ tsconfig.json
 rajzolosdi.ts
 rajzolosdi.html
 typescript.html
+package-lock.json
+node_modules
