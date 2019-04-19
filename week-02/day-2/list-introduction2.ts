@@ -16,6 +16,10 @@ console.log(listA);
 if (listA > listB){
     console.log("ListA is bigger than listB.")
 }
+else if (listA.length === listB.length) {
+    console.log('ListA is equal to ListB');
+    
+}
 else{
     console.log("ListB is bigger than listA.")
 }
