@@ -1,3 +1,3 @@
-https://github.com/szebald/patchwork
-https://github.com/szebald/hello-world
-https://github.com/szebald/git-lesson-repository
+https://github.com/szebald/patchwork\n
+https://github.com/szebald/hello-world\n
+https://github.com/szebald/git-lesson-repository\n
