@@ -10,24 +10,24 @@ const ctx = canvas.getContext('2d');
 // and draws a square of that size and color to the center of the canvas.
 // Create a loop that fills the canvas with rainbow colored squares.
 
-let colors: string [] =["#ff0000", "#FF7F00", "#FFFF00", "#4DE94C", "#3783FF", "#4815AA", "#ee82ee"]
+let colors: string[] = ["#ff0000", "#FF7F00", "#FFFF00", "#4DE94C", "#3783FF", "#4815AA", "#ee82ee"]
 
-function sqdraw (size) {
-    
+function sqdraw(size) {
+
     let x = 300 - size / 2
     let y = 200 - size / 2
+    ctx.strokeStyle = "black"
+    ctx.lineWidth = 1
 
-    for (let i = 0; i < 7; i++){
+    for (let i = 0; i < 7; i++) {
         ctx.fillStyle = colors[i]
-        ctx.fillRect(x,y, size, size)
-        ctx.strokeStyle = "black"
-        ctx.lineWidth = 1
+        ctx.fillRect(x, y, size, size)
         ctx.strokeRect(x, y, size, size)
         size = size - 40
         x = 300 - size / 2
         y = 200 - size / 2
-}
-return size
+    }
+    return size
 }
 
 console.log(sqdraw(275))
