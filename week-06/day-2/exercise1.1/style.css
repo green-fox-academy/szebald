@@ -1,0 +1,22 @@
+.e {
+  display: flex;
+  align-items: center;
+}
+
+.item-green {
+  background-color: rgb(0, 224, 0);
+  height: 190px;
+  width: 190px;
+}
+
+.item-yellow {
+  background-color: rgb(255, 218, 0);
+  height: 190px;
+  width: 190px;
+}
+
+.item-purple {
+  background-color: rgb(194, 0, 255);
+  height: 190px;
+  width: 190px;
+}
