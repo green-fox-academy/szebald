@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Delej</title>
+</head>
+<body>
+    <button>I will be clicked after 2 secs</button>
+    <h1></h1>
+  <script>
+  'use strict';
+
+  const button = document.querySelector('button');
+  const h1 = document.querySelector('h1');
+
+  button.addEventListener('click', (event) => {
+    setTimeout(function(){
+      button.disabled = true,
+       h1.innerHTML = '2 seconds elapsed'},
+        2000);
+    });
+  </script>
+  
+</body>
+</html>
