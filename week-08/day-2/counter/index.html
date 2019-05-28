@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Workshop: EventListeners</title>
+</head>
+
+<body>
+  <ul>
+    <li>apple</li>
+    <li>balloon</li>
+    <li>cat</li>
+    <li>dolphin</li>
+    <li>kiskutya</li>
+
+  </ul>
+  <button>How many items are in the list?</button>
+  <p class="result">dunno :(</p>
+
+  <script>
+    'use strict';
+
+    const button = document.querySelector('button');
+    const li = document.querySelectorAll('li').length;
+    const p = document.querySelector('p');
+
+    let result = 0;
+    const counter = () => {
+      for (let i = 0; i < li; i++) {
+        result++
+        p.innerHTML = result;
+      };
+    }
+    button.addEventListener('click', counter);
+  </script>
+</body>
+
+</html>
