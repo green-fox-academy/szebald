@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Workshop: EventListeners</title>
+  </head>
+  <body>
+    <h1>No last pressed key</h1>
+<script>
+  'use strict';
+
+  const h1 = document.querySelector('h1');
+
+  document.body.addEventListener('keydown', (event) => {
+	  h1.innerHTML = `Last pressed key code is: ${event.keyCode}`;
+	});
+</script>
+  </body>
+</html>
