@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>3 Times</title>
+</head>
+
+<body>
+  <button>Click me!</button>
+  <h1></h1>
+  <script>
+    'use strict';
+
+    const body = document.querySelector('body');
+    const button = document.querySelector('button');
+    const h1 = document.querySelector('h1');
+
+    let counter = 0;
+
+    const increaseCounter = () => {
+      counter++;
+    };
+
+    const timeoutFunction = () => {
+      button.addEventListener('click', increaseCounter);
+
+      setTimeout(() => {
+        if (counter >= 3) {
+          h1.innerHTML = '5 seconds elapsed and clicked 3 times';
+        }
+        console.log('5s passed');
+      }, 5000);
+    }
+
+    document.addEventListener("DOMContentLoaded", timeoutFunction);
+  </script>
+</body>
+
+</html>
