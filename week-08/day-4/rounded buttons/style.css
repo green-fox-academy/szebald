@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  align-content: center;
+  background-color: rgb(49, 40, 99);
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  
+}
+
+button {
+  height: 4rem;
+  width: 10rem;
+  border-radius: 5px;
+  margin: 40px;
+  margin-top: 25vw;
+  font-size: 16px;
+  transition: 0.66s;
+  text-shadow: 5px black;
+}
+
+.blue {
+  background: rgb(68, 85, 152);
+  border: hidden;
+}
+
+.green {
+  background: rgb(0, 172, 71);
+  border: hidden;
+}
+
+.red {
+  background: rgb(220, 33, 39);
+  border: hidden;
+}
+ 
