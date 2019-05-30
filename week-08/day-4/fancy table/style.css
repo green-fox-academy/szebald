@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(56, 142, 242);
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+table {
+  width: 90vw;
+  border-collapse: collapse;
+  border-style: hidden;
+  border-radius: 5px;
+}
+
+table td, table th {
+  border: 2px solid rgb(103, 104, 135);
+}
+
+thead {
+  background-color: rgb(27, 30, 37);
+  color: rgb(211, 220, 239);
+  font-size: 36px;
+  text-align: left;
+  padding-left: 25px;
+  height: 5rem;
+  border:3px solid rgb(103, 104, 135);
+}
+
+th {
+  margin-left: 25px;
+  border:3px solid rgb(103, 104, 135);
+  padding: 25px;
+  border-radius: 5px 5px 0 0;
+}
+
+td {
+  color: rgb(103, 104, 135);
+  background-color: white;
+  border:3px solid rgb(103, 104, 135);
+  padding-left: 31px;
+  font-size: 32px;
+  border-radius: 5px;
+}
+
+tr {
+  height: 7rem;
+}
+
+tr:nth-child(odd) > td{
+  background-color: rgb(235, 235, 235);
+}
+
+td[class="num"]::before {
+  content: "$ ";
+}
+
+td[class="num"]::after {
+  content: '.00'; 
+}
